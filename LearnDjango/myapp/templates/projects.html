@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block contente %}
+
+<h1>Projects</h1>
+
+{% for project in projects %}
+
+<article>
+    <h1>{{project.name}}</h1>
+    <button>
+        Delete
+    </button>
+    <button>
+        ✅ Done
+    </button>
+</article>
+
+{% endfor %}
+
+
+<p>{{projects}}</p>
+{% endblock %}
